@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="home-header">
+    <svg xmlns="http://w3.org" viewBox="0 0 120 120" width="80" height="80" fill="none" aria-label="Cookomix Offline Logo">
+        <!-- Background Shield -->
+        <path 
+            d="M60 12L20 28V56C20 82.5 37.1 106.8 60 114C82.9 106.8 100 82.5 100 56V28L60 12Z" 
+            fill="#1E293B" 
+            stroke="#32865c" 
+            stroke-width="4" 
+            stroke-linejoin="round"
+        />
+        <!-- Stylized Spoon / Whisk Handle -->
+        <path 
+            d="M74 34L58 56" 
+            stroke="#32865c" 
+            stroke-width="5" 
+            stroke-linecap="round"
+        />
+        <!-- Mixing Bowl -->
+        <path 
+            d="M36 58H84C84 71.2548 73.2548 82 60 82C46.7452 82 36 71.2548 36 58Z" 
+            fill="#F8FAFC"
+        />
+        <!-- Cache / Speed Accent Line -->
+        <path 
+            d="M44 65H64" 
+            stroke="#1E293B" 
+            stroke-width="3.5" 
+            stroke-linecap="round"
+        />
+    </svg>
+
+    <h1>Cookomix Offline</h1>
+</div>
+
+<div class="card">
+    <h2>Add recipe</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            <div class="{{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
+
+    <form method="POST" action="/add">
+        <input
+            type="url"
+            name="url"
+            placeholder="https://cookomix.com..."
+            required
+        >
+
+        <button type="submit">+ Add recipe</button>
+    </form>
+</div>
+
+<div class="card">
+    <h2>My recipes ({{ recipes|length }})</h2>
+
+    {% for recipe in recipes %}
+        <p>
+            <a href="{{ url_for('recipe', recipe_id=recipe.id) }}">
+                {{ recipe.title }}
+            </a>
+        </p>
+    {% else %}
+        <p>No recipes imported yet.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}
+

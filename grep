@@ -1,0 +1,17 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.252.181:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /recipe/1 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Ffonts%2F4%2Feldorado.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fassets%2F1337%2Fcook.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fassets%2F1337%2Fcook_recipe.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fassets%2F1337%2Fcook_foot.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fassets%2F1337%2Fcook_foot_recipe.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fwp-content%2Fthemes%2Fcookomix%2Fjs%2Fbundle.umd.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fwp-content%2Fuploads%2F2016%2F06%2Fbrownies-thermomix-800x600.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fwp-content%2Fthemes%2Fcookomix%2Fimages%2Fcookomix-recettes-thermomix.svg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:05] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fwp-content%2Fuploads%2Favatars%2F3852%2F20210518_204752-bpthumb.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:06] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fwp-content%2Fuploads%2F2016%2F09%2Fcropped-favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 00:46:06] "GET /cached/https:%2F%2Fwww.cookomix.com%2Fwp-content%2Fuploads%2F2016%2F09%2Fcropped-favicon-90x90.png HTTP/1.1" 200 -
